@@ -5,8 +5,8 @@ import WormholeConnect from '@wormhole-foundation/wormhole-connect'
 const wormholeConfig: WormholeConnectConfig = {
     env: 'testnet', // from deployment.json of the NTT deployment directory
     networks: ['sepolia', 'solana'], // from https://github.com/wormhole-foundation/wormhole-connect/blob/development/wormhole-connect/src/config/testnet/chains.ts#L170
-    tokens: ['FTTsep', 'FTTsol'], 
-    routes: ['nttManual'], // from https://github.com/wormhole-foundation/wormhole-connect/blob/d7a6b67b18db2c8eb4a249d19ef77d0174deffbe/wormhole-connect/src/config/types.ts#L70
+    // tokens: ['FTTsep', 'FTTsol'],  // this will limit the available tokens that can be transferred to the other chain
+    // routes: ['nttManual'], // this will limit the available routes - from https://github.com/wormhole-foundation/wormhole-connect/blob/d7a6b67b18db2c8eb4a249d19ef77d0174deffbe/wormhole-connect/src/config/types.ts#L70
     bridgeDefaults: {
       fromNetwork: 'sepolia',
       toNetwork: 'solana'
